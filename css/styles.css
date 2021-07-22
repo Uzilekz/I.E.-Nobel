@@ -1,0 +1,173 @@
+/* ---------- Fonts ---------- */
+@font-face {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  src: url(../fonts/YanoneKaffeesatz-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+/* ---------- Estilos letra ---------- */
+body {
+  font-family: "open sans", sans-serif;
+  background: rgb(245, 245, 245);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+/* ---------- Estilos header --------- */
+.header {
+  height: 60px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo, .fa-bars {
+  margin: 5px;
+  color: rgb(245, 245, 245);
+}
+
+.fa-bars {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: #fba919;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ---------- Estilos menu ---------- */
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -110%;
+  width: 100%;
+  transition: all .4s;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #fba919;
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+}
+
+.menu__link:hover {
+  background: rgb(245, 245, 245);
+  color: #fba919;
+}
+
+.menu__link--select {
+  background: rgb(245, 245, 245);
+  color: #fba919;
+}
+
+.mostrar {
+  left: 0;
+}
+
+/* ---------- Estilos banner ---------- */
+.banner {
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 40px;
+}
+
+.banner:before {
+  background: rgba(0, 0, 0, .3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  top: 0;
+  z-index: 1000;
+}
+
+.banner .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  z-index: 9999;
+}
+
+.banner__txt {
+  display: none;
+}
+
+/* ---------- Estilos info ---------- */
+.info__column {
+  background: #fba919;
+  color: rgb(245, 245, 245);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+/* --------- Estilos cursos --------- */
+.section__title {
+  text-align: center;
+  font-size: 30px;
+  color: #fba919;
+  margin-bottom: 30px;
+}
+
+.cursos__column {
+  position: relative;
+}
+
+.cursos__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(245, 245, 245);
+  background: rgba(0, 0, 0, .5);
+  width: 60%;
+  height: 100%;
+  padding: 5px;
+}
+
+.cursos__title {
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+/* --------- Estilos footer --------- */
+.footer {
+  background: #333;
+  color: rgb(245, 245, 245);
+  padding: 10px;
+  text-align: center;
+}
+
+.footer .social [class*="fa-"] {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
